@@ -17,8 +17,8 @@ var indexRoute       = require("./routes/index"),
     commentRoute     = require("./routes/comment");
 
 var app = express();
-mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
-
+//mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
+mongoose.connect("mongodb://iswarya91:isaMAR1991@ds245512.mlab.com:45512/yelpcamp_db", { useNewUrlParser: true });
 //SeedDB();
 
 app.use(bodyParser.urlencoded({ extended: true }));
