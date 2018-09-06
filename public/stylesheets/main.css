@@ -1,0 +1,19 @@
+.thumbnail img {
+    width:100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.campground-details {
+    padding: 10px;
+}
+
+.campground-reviews .add-reviews {
+    text-align: right;
+}
+
+.delete-form {
+    display: inline;
+}

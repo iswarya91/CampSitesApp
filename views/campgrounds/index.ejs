@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Awesome Sites for a Camping Trip</h1>
+        <p>Find all the best camping sites in the world</p>
+        <a  class="btn btn-primary btn-lg"href="/campgrounds/new">Add new campground</a>
+        
+    </div>
+</div>
+<div class="container">
+<div class="row" style="display:flex; flex-wrap:wrap;">
+<% campgrounds.forEach(function(camp) { %>
+    <div class="col-lg-3 col-sm-6">
+        <div class="thumbnail" >
+            <img style="width:100%; height: 200px;" src="<%= camp.image %>"> 
+            <div class="caption" style="text-align:center;font-weight:bold" ><%= camp.name %></div>
+            <a href="/campgrounds/<%= camp._id %>" style="margin:auto; display:block;" class="btn btn-primary">More Details</a>
+        </div>
+    </div>
+
+<% }) %>
+</div>
+</div>
+<% include ../partials/footer %>
